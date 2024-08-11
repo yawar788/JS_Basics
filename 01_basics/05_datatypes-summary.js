@@ -23,7 +23,7 @@ let myFunction=function(){
 }
 // myFunction();
 
-console.log(typeof names);
+// console.log(typeof names);
 
 
 
@@ -50,4 +50,27 @@ console.log(typeof names);
 // In dynamically typed languages all type checks are performed in a runtime, only when your 
 // program is executing. So this means you can just assign anything you want to the variable and 
 // it will work.
+
+//***************************** Memory In JS ******************************** 
+
+// stack(primitive) --> when using stack you get copy and changes be there
+// heap(non-primitive) --> when using heap you get copy and changes be in reference
+
+let name1="yawar";
+let nameChange=name1;
+nameChange="yawarabbas"
+console.log(name1);
+console.log(nameChange);
+
+let userOne={
+    email:"user@google.com",
+    city:"usercity"
+}
+
+let userTwo = userOne;
+userOne.email="yawar@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
