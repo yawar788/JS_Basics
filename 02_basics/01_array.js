@@ -1,5 +1,13 @@
 // array
 
+// The Array object, storing a collection of multiple items 
+// under a single variable name
+
+// resizable, mix data types.
+// array elements can be accessed using nonnegative integers 
+// zero-indexed
+// copy = shallow, deep 
+
  let myArr =[0,1,2,3,4,5];
  
  let myHeroes= ["Tony Shark","Iron Man"];
