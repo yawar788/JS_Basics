@@ -1,6 +1,11 @@
 // singleton
+// singleton made from constructor not from literals
 // object literals
-// Object.create // constructor method, also make singleton
+// Object.create // constructor method, singleton made from it
+
+// const myArr=[0,1,2,3,4];
+// console.log(myArr[0]); // 0
+
 
 // symbol
 
@@ -8,13 +13,14 @@ const mySymbol= Symbol("key123");
 
 const JsUser={
     name:"Yawar",
+    // "name":"Yawar" by default
     "full name":"Yawar Abbas",
     age: 21,
     [mySymbol]:"mykey123",
     location:"sukkur",
     email:"yawar-abbas@google.com",
     isLoggedIn: false,
-    lastLoginDays:["monday","saturday"]
+    lastLoginDays:["monday","saturday"] // array
 }
 
 // console.log(JsUser.email);
@@ -35,6 +41,7 @@ JsUser.greetings=function(){
 
 JsUser.greetingsTwo=function(){
     console.log(`hello, ${this.name}`); 
+    // this = same object reference, uses properties under the objectf
 }
 
 console.log(JsUser.greetings());
