@@ -1,5 +1,9 @@
 // nested scope 
 // child can access to parents 
+// dom = document object model 
+// manupulate html webpage by js 
+// lind by line execution, means if error the program stop there 
+// closure, closure gives access to its outer function 
 
 
 function one(){
@@ -39,7 +43,14 @@ if(true){
 
 
 // interesting 
+console.log(addOne(5));
+function addOne(num){
+    return num +1;
+}
 
-funcion addOne(num){
-    
+
+
+addTwo(5);
+const addTwo=function(num){
+    return num +2;
 }
