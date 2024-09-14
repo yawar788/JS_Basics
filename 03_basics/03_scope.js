@@ -1,56 +1,60 @@
 // nested scope 
 // child can access to parents 
-// dom = document object model 
+// dom = document object model
 // manupulate html webpage by js 
 // lind by line execution, means if error the program stop there 
-// closure, closure gives access to its outer function 
+// closure, closure gives access to its outer function/scope 
+// closure --> andr ka function bahir k variables ko access kr pata h 
 
 
-function one(){
+// function one(){
 
-    const user="Yawar";
+//     const user="Yawar";
 
-    function two(){
+//     function two(){
 
-        const website="youtube";
+//         const website="youtube";
 
-        console.log(user);
+//         console.log(user);
 
-    }  
+//     }  
 
-    // console.log(website);
+//     // console.log(website);
 
-    // two();
+//     // two();
 
-}
+// }
 
-one();
+// one();
 
 
-if(true){
-    const user="Yawar";
-    if(user==="Yawar"){
-        const website =" youtube";
-        // console.log(user + website);
+// if(true){
+//     const user="Yawar";
+//     if(user==="Yawar"){
+//         const website =" youtube";
+//         // console.log(user + website);
         
-    }
+//     }
 
     // console.log(website);
     
-}
+// }
 
 // console.log(user);
 
 
 // interesting 
-console.log(addOne(5));
-function addOne(num){
-    return num +1;
-}
+
+// console.log(addOne(5));
+// function addOne(num){
+//     return num +1;
+// }
 
 
 
-addTwo(5);
-const addTwo=function(num){
-    return num +2;
-}
+// addTwo(5);
+// const addTwo=function(num){
+//     return num +2;
+// }
+
+
