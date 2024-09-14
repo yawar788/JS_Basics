@@ -59,8 +59,8 @@ let myFunction=function(){
 let name1="yawar";
 let nameChange=name1;
 nameChange="yawarabbas"
-console.log(name1);
-console.log(nameChange);
+// console.log(name1);
+// console.log(nameChange);
 
 let userOne={
     email:"user@google.com",
@@ -68,9 +68,12 @@ let userOne={
 }
 
 let userTwo = userOne;
-userOne.email="yawar@google.com";
+userTwo.email="yawar@google.com";
 
-console.log(userOne.email);
-console.log(userTwo.email);
+// console.log(userOne.email);
+// console.log(userTwo.email);
+
+
+
 
 
