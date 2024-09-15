@@ -1,6 +1,6 @@
 // this= refer to current context
 // scope k andr jitne bhi variables hen access kr skte ho this use kr k 
-// global object in browser i window object
+// global object in browser is window object
 
 
 // object-1
