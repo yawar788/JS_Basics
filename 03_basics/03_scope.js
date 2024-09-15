@@ -1,9 +1,9 @@
 // nested scope 
-// child can access to parents 
+// child can access to parents  // scope concept 
 // dom = document object model
 // manupulate html webpage by js 
-// lind by line execution, means if error the program stop there 
-// closure, closure gives access to its outer function/scope 
+// line by line execution, means if error occur the program stops 
+// closure=closure gives access to its outer function/scope 
 // closure --> andr ka function bahir k variables ko access kr pata h 
 
 
