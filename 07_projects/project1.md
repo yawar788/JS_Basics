@@ -60,3 +60,17 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## project-3
+
+```javascript
+const clock = document.querySelector('#clock');
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 4000);
+
+
+
+```
+
