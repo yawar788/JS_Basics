@@ -8,6 +8,12 @@
 //     i=i+2
 // }
 
+// Infinite loops are bad!
+// while (true) {
+//     console.log("Hello, world!");
+//   }
+  
+
 
 // while with array
 // let myArray=['flash','batman','superman']

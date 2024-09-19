@@ -1,4 +1,8 @@
-// iterations 
+// iterations and loops 
+
+// for (initialization; condition; afterthought)
+//     statement
+  
 
 // for loop 
 for (let i = 0; i <= 10; i++) {
@@ -18,7 +22,7 @@ for (let i = 9; i <= 9; i++) {
      for (let j =1; j <= 10; j++) {
     
         // console.log(`inner loop ${j} and inner loop is ${i}`);
-        // console.log(`${i} * ${j}  = ${i*j}`)
+        // console.log(`${i} * ${j}  = ${i*j}`) // table 
 
         
         
@@ -51,12 +55,12 @@ for (let index = 3; index >=0; index--) {
 // }
 
 
-for (let i = 0; i <5; i++) {
+// for (let i = 0; i <5; i++) {
 
-    if (i===3) {
-        console.log('detected 3');
-        continue;
-    }
-    console.log(`value of i is: ${i}`);
+//     if (i===3) {
+//         console.log('detected 3');
+//         continue;
+//     }
+//     console.log(`value of i is: ${i}`);
     
-}
+// }
