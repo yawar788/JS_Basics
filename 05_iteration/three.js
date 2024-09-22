@@ -25,7 +25,12 @@ for(const num of arr){
 
 let greeting = "hello yawar"
 for (const greet of greeting) {
-    // console.log(`Each char is : ${greet}`);
+    console.log(`Each char is : ${greet}`);
+    if (greet==' ') {
+        console.log('sapce detected');
+        break
+    }
+    
     
 }
 
@@ -37,9 +42,9 @@ for (const greet of greeting) {
 
 
 const map=new Map();
-map.set('name','yawar');
-map.set('age','24');
-map.set('address','street-2 new pind pathan colony sukkr');
+// map.set('name','yawar');
+// map.set('age','24');
+// map.set('address','street-2 new pind pathan colony sukkr');
 // console.log(map);
 
 for (const [key,value] of map) {
@@ -57,7 +62,7 @@ const myarr={
     
 }
 
-for (const [key,value] of myarr) {
-    console.log(key,':-',value)
+// for (const [key,value] of myarr) {
+    // console.log(key,':-',value)
     
-}
+// }
