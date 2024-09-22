@@ -25,9 +25,9 @@ for(const num of arr){
 
 let greeting = "hello yawar"
 for (const greet of greeting) {
-    console.log(`Each char is : ${greet}`);
+    // console.log(`Each char is : ${greet}`);
     if (greet==' ') {
-        console.log('sapce detected');
+        // console.log('sapce detected');
         break
     }
     
@@ -35,7 +35,8 @@ for (const greet of greeting) {
 }
 
 // map
-// like objects 
+// map is object
+// like arrays 
 // take unique value 
 // follow order
 // iteratable
@@ -45,7 +46,7 @@ const map=new Map();
 // map.set('name','yawar');
 // map.set('age','24');
 // map.set('address','street-2 new pind pathan colony sukkr');
-// console.log(map);
+// console.log(typeof map);
 
 for (const [key,value] of map) {
     // console.log(key,':-',value)
