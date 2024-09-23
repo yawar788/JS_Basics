@@ -24,7 +24,7 @@ const coding =['js','ruby','java']
 
 // console.log(newNums);
 
-const books = [
+let books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
@@ -38,7 +38,12 @@ const books = [
 
  
 
-  const newBooks=books.filter( (bk)=>bk.genre ==='History')
+  let newBooks=books.filter( (bk)=>bk.genre ==='History')
+
+
+ newBooks=books.filter( (bk)=>
+  bk.publish >2000 && bk.genre==='History'
+)
 console.log(newBooks);
 
 
