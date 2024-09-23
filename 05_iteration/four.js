@@ -7,14 +7,28 @@ const myobj={
 }
 
 for (const key in myobj) {
-    console.log(`${key} short for ${myobj[key]}`);
+    // console.log(`${key} short for ${myobj[key]}`);
     
 }
 
 // array
-const myArr=['rb','py','cpp','js']
+const programing=['rb','py','cpp','js']
 
-for (const key in myArr) {
-    console.log(`${myArr[key]}`);
+for (const key in programing) {
+    // console.log(`${programing[key]}`);
     
+}
+
+
+
+
+const map=new Map();
+map.set('name','yawar');
+map.set('age','24');
+map.set('address','street-2 new pind pathan colony sukkr');
+// console.log(typeof map);
+
+for (const key in map) {
+   console.log(key);
+   
 }
