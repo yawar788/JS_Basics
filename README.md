@@ -1,2 +1,2 @@
-# 01_JS_CAD
-a code repo for javascript series at chai and code channel
+# 01-Js
+a code repo for javascript series
