@@ -37,15 +37,35 @@ let car = {
 
 
 // add method 
-let person = {
-    name: "Yawar Abbas"
-};
+// let person = {
+//     name: "Yawar Abbas"
+// };
 
 // Adding a method after the object is created
-person.sayHello = function() {
-    console.log("Hello, I am " + this.name);
-};
+// person.sayHello = function() {
+//     console.log("Hello, I am " + this.name);
+// };
 
 // person.sayHello();  // Output: Hello, I am Yawar Abbas
 // console.log(person);
+
+
+
+// Method Shorthand (ES6)
+// In ES6, you can define methods inside objects using a shorthand syntax.
+//  You don’t need to use the function keyword.
+
+let person = {
+    name: "Yawar Abbas",
+    greet() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+person.greet();  // Output: Hello, my name is Yawar Abbas
+
+
+
+
+
 
