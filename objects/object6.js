@@ -70,3 +70,13 @@ let person = {
 console.log(person.fullName);  // Output: Yawar Abbas
 person.fullName = "Ali Khan";
 console.log(person.fullName);  // Output: Ali Khan
+
+
+// Summary of Key Concepts:
+// Methods are functions stored as properties in an object.
+// The this keyword inside methods refers to the object that invokes the method.
+// Methods can be added to objects during or after creation.
+// Methods can be defined using regular function expressions, arrow functions, or shorthand syntax.
+// Method chaining enables calling multiple methods in a sequence.
+// Static methods are methods defined on a class itself, not on instances of the class.
+// Getters and setters provide a way to access and modify object properties in a method-like manner.
