@@ -33,7 +33,7 @@
 
 
 // function Animal(){};
-EvalError,
+
 // Animal.prototype.eat=function(){
 //     console.log(`eating`);
     
@@ -42,3 +42,26 @@ EvalError,
 // let dog = new Animal();
 // dog.eat()
 // dog has access to the eat method through Animal.prototype.
+
+
+
+// Classes in ES6
+// Classes in JavaScript are special functions that act as templates for creating objects.
+
+class Person{
+    constructor(name,age){
+    this.name=name;
+    this.age=age;
+    }
+
+    greet(){
+        console.log(`Hello my name is ${this.name}`);
+        
+    }
+}
+
+let person1=new Person('yawar',23);
+console.log(person1);
+
+
+
