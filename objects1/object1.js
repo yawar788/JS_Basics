@@ -68,22 +68,41 @@
 // You can retrieve these descriptors using Object.getOwnPropertyDescriptor() and modify
 //  them using Object.defineProperty().
 
-let person ={
-    name:'Yawar'
-}
+// let person ={
+//     name:'Yawar'
+// }
 
-let descriptor=Object.getOwnPropertyDescriptor(person,'name');
-// console.log(descriptor);
+// let descriptor=Object.getOwnPropertyDescriptor(person,'name');
+// // console.log(descriptor);
 
-Object.defineProperty(person,'name',{
-    // writable=false
-    enumerable:false // name cannot be changed
-})
+// Object.defineProperty(person,'name',{
+//     // writable=false
+//     enumerable:false // name cannot be changed
+// })
 
-// person.name='abbas';  // no effect because writable isf false
-// console.log(person.name); // Yawar
+// // person.name='abbas';  // no effect because writable isf false
+// // console.log(person.name); // Yawar
 
-for (const key in person) {
-    console.log(key);
+// for (const key in person) {
+//     console.log(key);
     
+// }
+
+
+let person = {
+    name: "Yawar Abbas",
+    age: 25
+};
+
+// Adding a non-enumerable property
+Object.defineProperty(person, 'profession', {
+    value: "Engineer",
+    enumerable: false  // This makes 'profession' non-enumerable
+});
+
+for (let key in person) {
+    console.log(key);  // Outputs only 'name' and 'age', not 'profession'
 }
+
+console.log(person.profession);  // Output: Engineer
+
