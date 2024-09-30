@@ -1,2 +1,2 @@
-# 01-Js
+# JS Basics 
 a code repo for javascript series
