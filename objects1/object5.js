@@ -2,10 +2,10 @@
 // This method freezes an object, preventing new properties from being added, 
 // existing properties from being removed, and values of existing properties from being changed.
 
-const obj = { name: 'Alice', age: 25 };
-Object.freeze(obj);
-obj.age = 30; // This will not change the age property
-console.log(obj.age); 
+// const obj = { name: 'Alice', age: 25 };
+// Object.freeze(obj);
+// obj.age = 30; // This will not change the age property
+// console.log(obj.age); 
 // Output: 25
 // Object.freeze() is useful for creating immutable objects.
 
@@ -21,11 +21,11 @@ console.log(config.timeout);
 // and marking all existing properties as non-configurable. However, values 
 // of existing properties can still be modified.
 
-const obj = { name: 'Alice', age: 25 };
-Object.seal(obj);
-obj.age = 30; // Modifies the age
-delete obj.name; // Fails silently or throws an error in strict mode
-console.log(obj); 
+// const obj = { name: 'Alice', age: 25 };
+// Object.seal(obj);
+// obj.age = 30; // Modifies the age
+// delete obj.name; // Fails silently or throws an error in strict mode
+// console.log(obj); 
 // Output: { name: "Alice", age: 30 }
 // Use case: You might use Object.seal() when you want to ensure that no 
 // new properties are added to an object but still allow modification of existing properties.
@@ -58,3 +58,17 @@ console.log(Object.is(0, -0));    // Output: false
 console.log(Object.is(5, 5));     // Output: true
 // Object.is() is particularly useful when you need precise equality
 //  checks, especially with special cases like NaN and -0.
+
+
+// Object.getOwnPropertyDescriptors()
+// This method returns an object that contains all property descriptors for the
+//  own properties (properties defined directly on the object, not on its prototype chain).
+
+const obj = { name: 'Alice', age: 25 };
+const descriptors = Object.getOwnPropertyDescriptors(obj);
+console.log(descriptors); 
+// Output:
+// {
+//   name: { value: 'Alice', writable: true, enumerable: true, configurable: true },
+//   age: { value: 25, writable: true, enumerable: true, configurable: true }
+// }
