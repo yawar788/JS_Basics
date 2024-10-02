@@ -9,10 +9,10 @@
 // Output: 25
 // Object.freeze() is useful for creating immutable objects.
 
-const config = { apiUrl: 'https://example.com', timeout: 5000 };
-Object.freeze(config);
-config.timeout = 3000; // This line will have no effect
-console.log(config.timeout); 
+// const config = { apiUrl: 'https://example.com', timeout: 5000 };
+// Object.freeze(config);
+// config.timeout = 3000; // This line will have no effect
+// console.log(config.timeout); 
 // Output: 5000
 
 
@@ -35,10 +35,10 @@ console.log(config.timeout);
 // This method creates a new object, using an existing object as the prototype 
 // of the newly created object.
 
-const personPrototype = { greet() { console.log('Hello!'); } };
-const john = Object.create(personPrototype);
-john.name = 'John';
-console.log(john.greet()); 
+// const personPrototype = { greet() { console.log('Hello!'); } };
+// const john = Object.create(personPrototype);
+// john.name = 'John';
+// console.log(john.greet()); 
 // Output: "Hello!"
 
 
@@ -46,6 +46,10 @@ const carPrototype = { start() { console.log('Car started'); } };
 const myCar = Object.create(carPrototype);
 myCar.model = 'Camry';
 myCar.start(); 
+let prototype=Object.getPrototypeOf(myCar)
+console.log(prototype);
+
+
 // Output: "Car started"
 
 
@@ -53,9 +57,9 @@ myCar.start();
 // This method determines whether two values are the same value
 //  (similar to === but with a few differences, such as treating NaN as equal to NaN).
 
-console.log(Object.is(NaN, NaN)); // Output: true
-console.log(Object.is(0, -0));    // Output: false
-console.log(Object.is(5, 5));     // Output: true
+// console.log(Object.is(NaN, NaN)); // Output: true
+// console.log(Object.is(0, -0));    // Output: false
+// console.log(Object.is(5, 5));     // Output: true
 // Object.is() is particularly useful when you need precise equality
 //  checks, especially with special cases like NaN and -0.
 
@@ -64,11 +68,21 @@ console.log(Object.is(5, 5));     // Output: true
 // This method returns an object that contains all property descriptors for the
 //  own properties (properties defined directly on the object, not on its prototype chain).
 
-const obj = { name: 'Alice', age: 25 };
-const descriptors = Object.getOwnPropertyDescriptors(obj);
-console.log(descriptors); 
+// const obj = { name: 'Alice', age: 25 };
+// const descriptors = Object.getOwnPropertyDescriptors(obj);
+// console.log(descriptors); 
 // Output:
 // {
 //   name: { value: 'Alice', writable: true, enumerable: true, configurable: true },
 //   age: { value: 25, writable: true, enumerable: true, configurable: true }
 // }
+
+
+// Object.getPrototypeOf()
+// This method returns the prototype (i.e., the value of the internal [[Prototype]] 
+// property) of the specified object.
+
+// const obj = {a:2,b:3};
+// const prototype = Object.getPrototypeOf(obj);
+// console.log(prototype); 
+// Output: Object.prototype (or similar, depending on environment)
