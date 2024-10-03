@@ -18,10 +18,55 @@
 // let upper = names.map((name=>name.toUpperCase()));
 // console.log(upper);
 
-let names=[{firstName:'yawar', lastName:'abbas'},{firstName:'naseem',lastName:'abbas'}]
-let fulnames=names.map(name=>`${name.firstName} : ${name.lastName}`)
-console.log(fulnames);
+// let names=[{firstName:'yawar', lastName:'abbas'},{firstName:'naseem',lastName:'abbas'}]
+// let fulnames=names.map(name=>`${name.firstName} : ${name.lastName}`)
+// console.log(fulnames);
 
+
+// reduce()
+// What it does:
+// reduce() executes a reducer function (that you provide) on each element of the array, 
+// resulting in a single output value (e.g., sum, product, or concatenated string).
+// Unlike map() and filter(), it doesn't return an array, but rather a single value
+//  (number, object, array, string, etc.).
+
+// const result = array.reduce(callback(accumulator, currentValue, index, array), initialValue);
+// accumulator: The accumulated result of the previous iterations.
+// currentValue: The current element being processed.
+// initialValue (optional): The initial value to use as the accumulator in the 
+// first iteration. If omitted, the first element of the array is used as the initial value.
+
+// let numbers = [1,2,3,4];
+// let sum = numbers.reduce((acc,num)=>sum+val,0)
+// console.log(sum);
+// Summing values: You can sum up all the numbers in an array using reduce().
+
+// const prices = [29.99, 19.99, 4.99];
+// let totalprize=prices.reduce((total,price)=> total+price,0);
+// console.log(totalprize);
+
+// Flattening an array: You can use reduce() to flatten a multi-dimensional array.
+// const nestedArray = [[1, 2], [3, 4], [5, 6]];
+// let flatten=nestedArray.reduce((acc,curr)=>acc.concat(curr));
+// console.log(flatten);
+
+// count 
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+const fruitCount = fruits.reduce((acc, fruit) => {
+  acc[fruit] = (acc[fruit] || 0) + 1;
+  return acc;
+}, {});
+console.log(fruitCount); 
+// Output: { apple: 3, banana: 2, orange: 1 }
+
+// Creating a unique array: You can use reduce() to filter out duplicate
+//  items in an array.
+const numbers = [1, 2, 3, 4, 3, 2, 1];
+const uniqueNumbers = numbers.reduce((acc, num) => {
+  if (!acc.includes(num)) acc.push(num);
+  return acc;
+}, []);
+console.log(uniqueNumbers); // Output: [1, 2, 3, 4]
 
 
 // const coding =['js','ruby','java']
