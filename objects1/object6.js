@@ -10,11 +10,9 @@
 // JavaScript provides the Date object to handle date and time operations.
 // Date.now(): Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 // console.log(Date.now());
-
 // Date.getFullYear(): Returns the year of the specified date according to local time.
 // let date = new Date();
 // console.log(date.getFullYear()); // Output: 2024
-
 // Date.getMonth(): Returns the month (0-11) in the specified date according to local time.
 // const month = new Date()
 // console.log(month.getMonth());
