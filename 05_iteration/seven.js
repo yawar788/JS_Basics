@@ -10,7 +10,7 @@
 // The reduce() method in JavaScript is a powerful array method that 
 // executes a reducer function on each element of the array, resulting in a single output value.
 
-// Syntax
+// Syntax 
 // array.reduce(callback(accumulator, currentValue, index, array), initialValue)
 
 // callback: The function to execute on each element in the array.
