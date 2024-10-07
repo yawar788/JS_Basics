@@ -8,7 +8,7 @@ const myobj={
 
 for (const key in myobj) {
     // console.log(`${key} short for ${myobj[key]}`);
-    
+      
 }
 
 // array
