@@ -1,7 +1,7 @@
 // scopes {}
 // if {} increase scope increase 
 // let, var, const 
-// scope = function, if else 
+// scope = function, if else  
 
 // var c =300;
 var a =300;
