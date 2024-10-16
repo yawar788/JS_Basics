@@ -9,7 +9,7 @@
 // copy = shallow, deep 
 
  let myArr =[0,1,2,3,4,5];
- 
+
  let myHeroes= ["Tony Shark","Iron Man"];
  let myArr2= new Array(1,2,3,4);
  //  console.log(myArr[3]);
