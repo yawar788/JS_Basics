@@ -56,9 +56,21 @@ const fruits=['banana','apple','orange'];
 // })
 
 // For...of Loop:
-for(const fruit of fruits){
-    console.log(fruit);
-}
+// for(const fruit of fruits){
+//     console.log(fruit);
+// }
+
+// Common Array Methods
+// slice(start, end): Returns a shallow copy of a portion of an array.
+// console.log(fruits.slice(0,2));
+
+// splice(start, deleteCount, item1, item2, ...): Changes the contents
+//  of an array by removing or replacing existing elements.
+fruits.splice(1, 1, 'kiwi'); // Removes 1 element at index 1 and adds 'kiwi'
+console.log(fruits); // Output: ['apple', 'kiwi', 'cherry']
+
+
+
 
 
 
