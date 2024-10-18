@@ -1,8 +1,9 @@
 // arrays 
-// In JavaScript, an array is a built-in object that provides 
+// In JavaScript
+// a built-in object that provides 
 // a way to store a collection of data
 // It is an ordered list of values, which can be of any data type,
-//  including numbers, strings, objects, or even other arrays.
+// including numbers, strings, objects, or even other arrays.
 
 // 1. Array Literal Syntax
 const fruits=['banana','apple','orange'];
