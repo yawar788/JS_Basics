@@ -8,6 +8,8 @@ fruits.sort(); // Sorts the array alphabetically
 
 fruits.reverse(); // Reverses the order of the array
 
+// Multidimensional Arrays
+// You can create arrays of arrays (multidimensional arrays):
 const martrix = [
   [1,[1,2,3],2,3],
   [4,5,6],
