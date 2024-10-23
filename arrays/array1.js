@@ -8,6 +8,7 @@
 // 1. Array Literal Syntax
 const fruits=['banana','apple','orange'];
 
+
 // 2. Array Constructor
 // const fruits = new Array('apple', 'banana', 'cherry');
 
