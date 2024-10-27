@@ -7,6 +7,7 @@
 //     i=i+2
 // }
 
+
 // Infinite loops are bad!
 // while (true) {
 //     console.log("Hello, world!");
