@@ -2,7 +2,8 @@
 
 // for (initialization; condition; afterthought)
 //     statement
-  
+
+
 
 // for loop 
 for (let i = 0; i <= 10; i++) {
