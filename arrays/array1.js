@@ -35,6 +35,23 @@ const fruits=['banana','apple','orange'];
 // const Lastfruit=fruits.pop();
 // console.log(Lastfruit);
 
+// Important Array Properties
+// length: Returns the number of elements in the array. This is dynamic and 
+// adjusts automatically when elements are added or removed.
+// const animals = ['cat', 'dog', 'elephant'];
+// console.log(animals.length); // Output: 3
+
+// concat(): Merges two or more arrays and returns a new array.
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const combined = arr1.concat(arr2); // [1, 2, 3, 4, 5, 6]
+
+// join(): Converts all elements of an array into a string, separated by a specified separator.
+// const names = ['Alice', 'Bob', 'Charlie'];
+// console.log(names.join('-')); // Output: Alice-Bob-Charlie
+
+
+
 // Using shift(): Removes the first element from the array and returns it.
 // console.log(fruits);
 // fruits.shift();
