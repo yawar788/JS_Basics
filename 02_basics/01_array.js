@@ -1,5 +1,4 @@
 // array
-
 // The Array object, storing a collection of multiple items 
 // under a single variable name
 
