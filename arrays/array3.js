@@ -35,7 +35,7 @@ const hasNegative = numbers.some(num => num < 0); // false
 
 // sort(): Sorts the elements of an array in place and returns the sorted array.
 const sorted = numbers.sort((a,b)=>b-a) // sort in descending order
-const sorted = numbers.sort((a,b)=>a-b) // sort in descending order 
+const sorted = numbers.sort((a,b)=>a-b) // sort in ascending order 
 const sorted = numbers.sort() // sort alphabatically
 
 // flat(): Creates a new array with all sub-array elements concatenated into 
