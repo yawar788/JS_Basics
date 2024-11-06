@@ -19,8 +19,8 @@ let templateLiteral = `Hello, World!`;
 // \t: Tab
 // \\: Backslash
 // \" or \': Double or single quotes inside strings
-
 // let escaped = 'He said, "Hello!"\nWelcome to JavaScript.';
+
 // 3. Template Literals (Backticks)
 // Template literals allow for embedded expressions with ${expression} 
 // and span multiple lines without needing escape characters.
@@ -35,6 +35,22 @@ let templateLiteral = `Hello, World!`;
 
 // let text = "JavaScript";
 // console.log(text.length); // 10
+
+// Common Methods:
+// .toUpperCase(): Converts to uppercase.
+// .toLowerCase(): Converts to lowercase.
+// .includes(substring): Checks if a substring is present.
+// .indexOf(substring): Returns the position of the first occurrence.
+// .slice(start, end): Extracts a part of a string.
+// .replace(search, replacement): Replaces text.
+
+let sentence = "JavaScript is versatile.";
+console.log(sentence.toUpperCase()); // "JAVASCRIPT IS VERSATILE."
+console.log(sentence.includes("versatile")); // true
+console.log(sentence.indexOf("JavaScript")); // 0
+console.log(sentence.slice(0, 10)); // "JavaScript"
+console.log(sentence.replace("versatile", "powerful")); // "JavaScript is powerful."
+
 
 
 
