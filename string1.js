@@ -44,16 +44,27 @@ let templateLiteral = `Hello, World!`;
 // .slice(start, end): Extracts a part of a string.
 // .replace(search, replacement): Replaces text.
 
-let sentence = "JavaScript is versatile.";
-console.log(sentence.toUpperCase()); // "JAVASCRIPT IS VERSATILE."
-console.log(sentence.includes("versatile")); // true
-console.log(sentence.indexOf("JavaScript")); // 0
-console.log(sentence.slice(0, 10)); // "JavaScript"
-console.log(sentence.replace("versatile", "powerful")); // "JavaScript is powerful."
+// let sentence = "JavaScript is versatile.";
+// console.log(sentence.toUpperCase()); // "JAVASCRIPT IS VERSATILE."
+// console.log(sentence.includes("versatile")); // true
+// console.log(sentence.indexOf("JavaScript")); // 0
+// console.log(sentence.slice(0, 10)); // "JavaScript"
+// console.log(sentence.replace("versatile", "powerful")); // "JavaScript is powerful."
 
+// 5. Multi-line Strings
+// Using backticks simplifies writing multi-line strings without \n.
 
+// let multiLine = `This is
+// a multi-line
+// string.`;
 
+// 6. Concatenation
+// Strings can be combined with + or by using template literals.
 
+// let firstName = "Yawar";
+// let lastName = "Abbas";
+// console.log(firstName + " " + lastName); // "Yawar Abbas"
+// console.log(`${firstName} ${lastName}`); // "Yawar Abbas"
 
 
 
