@@ -1,5 +1,5 @@
 // function-part 1
-// function - some lines of code close in pacakage 
+//function - some lines of code close in pacakage 
 // takes copies and use it
 
 // defination
