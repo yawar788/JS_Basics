@@ -36,6 +36,34 @@ let templateLiteral = `Hello, World!`;
 // let text = "JavaScript";
 // console.log(text.length); // 10
 
+// 1. .charAt(index)
+// Returns the character at a specified position.
+
+// let str = "JavaScript";
+// console.log(str.charAt(0)); // "J"
+// console.log(str.charAt(4)); // "S"
+
+// 2. .includes(substring, startIndex)
+// Checks if a string contains a specific substring. Returns true or false.
+
+// let str = "JavaScript is awesome";
+// console.log(str.includes("awesome")); // true
+// console.log(str.includes("Awesome", 10)); // false (case-sensitive)
+
+// 3. .indexOf(substring)
+// Finds the position of the first occurrence of a substring. Returns -1 if not found.
+
+// let str = "JavaScript is versatile";
+// console.log(str.indexOf("is")); // 11
+// console.log(str.indexOf("Python")); // -1
+
+// 4. .slice(startIndex, endIndex)
+// Extracts part of a string from startIndex to endIndex (not inclusive).
+// let str = "JavaScript";
+// console.log(str.slice(0, 4)); // "Java"
+// onsole.log(str.slice(4)); // "Script" (from index 4 to end)
+
+
 // Common Methods:
 // .toUpperCase(): Converts to uppercase.
 // .toLowerCase(): Converts to lowercase.
