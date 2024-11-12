@@ -94,7 +94,7 @@ console.log(str1.concat(", ", str2, "!")); // "Hello, World!"
 // 11. .repeat(count)
 // Repeats the string a specified number of times.
 let str = "Hello world";
-console.log(str.repeat(3)); // "Hello Hello Hello "
+console.log(str.repeat(4)); // "Hello Hello Hello "
 
 // 12. .startsWith(substring, startIndex) and .endsWith(substring, length)
 // Checks if a string starts or ends with a specific substring.
