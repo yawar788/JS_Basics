@@ -7,7 +7,7 @@ let singleQuote = 'Hello, World!';
 let doubleQuote = "Hello, World!";
 let templateLiteral = `Hello, World!`;
 
-// Differences:
+// Differences;
 // Single and Double Quotes: Used interchangeably for basic strings. They can contain 
 // escape characters like \n (newline) and \' or \" for quotes inside quotes.
 // Backticks (Template Literals): Allow multi-line strings and embedding expressions.
