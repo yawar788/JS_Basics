@@ -246,5 +246,20 @@ console.log(message); // "Hello, Yawar! You have 5 new notifications."
 // console.log(firstName + " " + lastName); // "Yawar Abbas"
 // console.log(`${firstName} ${lastName}`); // "Yawar Abbas"
 
+// Summary Table of Common String Methods
+// Method	Description	Example
+// .charAt()	Returns character at specified index	"JavaScript".charAt(4) → "S"
+// .includes()	Checks if a string contains a substring	"JavaScript".includes("Java") → true
+// .indexOf()	Finds first occurrence of substring	"JavaScript".indexOf("S") → 4
+// .slice()	Extracts part of a string	"JavaScript".slice(4) → "Script"
+// .substring()	Extracts part of a string (non-negative indices only)	"JavaScript".substring(0,4) → "Java"
+// .toUpperCase()	Converts string to uppercase	"javascript".toUpperCase() → "JAVASCRIPT"
+// .replace()	Replaces substring with new value	"Hello".replace("l","r") → "Hero"
+// .split()	Splits string into an array	"a,b,c".split(",") → ["a", "b", "c"]
+// .trim()	Removes whitespace from both ends	" Hello ".trim() → "Hello"
+// .repeat()	Repeats string n times	"Hi".repeat(3) → "HiHiHi"
+// .startsWith()	Checks if string starts with a substring	"Java".startsWith("J") → true
+
+
 
 
