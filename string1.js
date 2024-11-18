@@ -2,7 +2,6 @@
 // They can be defined in three main ways: with double quotes ("), single quotes 
 // ('), or backticks (`). Each has unique properties and use cases. Here’s an in-depth look:
 
-
 // 1. Declaring Strings
 let singleQuote = 'Hello, World!';
 let doubleQuote = "Hello, World!";
