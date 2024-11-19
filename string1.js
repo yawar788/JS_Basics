@@ -5,7 +5,7 @@
 // 1. Declaring Strings
 let singleQuote = 'Hello, World!';
 let doubleQuote = "Hello, World!";
-let templateLiteral = `Hello, World!`;
+let templateLiteral = `Hello, World!`; // backticks also called string interpolation
 
 // Differences;
 // Single and Double Quotes: Used interchangeably for basic strings. They can contain 
