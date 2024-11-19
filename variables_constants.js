@@ -16,13 +16,44 @@
 //    but are initialized to undefined.
 
 // Example 1: Function Scope
+// function testVar() {
+//     if (true) {
+//         var x = 10; // Scoped to the entire function
+//     }
+//     console.log(x); // Output: 10
+// }
+// testVar();
 
-function testVar(){
-  if(true){
-    var x= 10;
-  }
-  console.log(x);
-}
+// Example 2: Hoisting
+// console.log(a); // Output: undefined (hoisted)
+// var a = 5;
 
-testVar();
-  
+// Example 3: Global Scope
+// var globalVar = "I am global";
+// function display() {
+//     console.log(globalVar); // Accesses global variable
+// }
+// display();
+
+// 2. let (Block Scope)
+// Characteristics:
+// Block Scope: let variables are limited to the block {} in which they are declared.
+// Re-declaration Not Allowed: You cannot re-declare a variable in the same scope with let.
+// Hoisting: Variables declared with let are hoisted but are not initialized until they 
+// are encountered (Temporal Dead Zone).
+
+// Example 1: Block Scope
+// if (true) {
+    // let y = 20; // Scoped to this block
+    // console.log(y); // Output: 20
+// }
+// console.log(y); // ReferenceError: y is not defined
+
+// Example 2: Temporal Dead Zone
+// console.log(z); // ReferenceError: Cannot access 'z' before initialization
+// let z = 30;
+
+// Example 3: Re-declaration Not Allowed
+// let value = 10;
+// let value = 20; // SyntaxError: Identifier 'value' has already been declared
+
