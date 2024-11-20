@@ -112,4 +112,9 @@
 // Re-declaration	 Allowed	                    Not Allowed	             Not Allowed
 // Re-assignment	 Allowed	                    Allowed	                 Not Allowed  
 
+// Use Cases
+// Use const when the value should remain constant.
+// Use let for variables that will change or are block-scoped.
+// Avoid var unless dealing with legacy code.
+
 
