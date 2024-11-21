@@ -1,2 +1,2 @@
 # JS Basics 
-a code repo for javascript series
+A code repo for javascript fundamentals series.
