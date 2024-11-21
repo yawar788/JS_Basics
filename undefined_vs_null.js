@@ -32,6 +32,47 @@ console.log(person.age); // Output: undefined (age is not defined)
 const arr = [1, , 3]; // Sparse array
 console.log(arr[1]); // Output: undefined (2nd element is empty)
 
+// 1.2 How undefined Propagates
+// If any operation involves undefined, it can lead to unexpected results:
+// let a;
+// console.log(a + 2); // Output: NaN (undefined coerces into NaN in arithmetic)
+
+// 2.2 Common Patterns Using null
+// Lazy Initialization:
+// let databaseConnection = null; // Initialize when needed
+// if (!databaseConnection) {
+//   databaseConnection = connectToDatabase();
+// }
+
+// State Management:
+// let currentUser = null; // No user is logged in
+
+// Comparison in Truthy/Falsy Context
+// Both are falsy, but they behave differently:
+// if (!undefined) console.log("undefined is falsy"); // Output: "undefined is falsy"
+// if (!null) console.log("null is falsy");          // Output: "null is falsy
+
+// Edge Case:
+// console.log(undefined || "default"); // Output: "default"
+// console.log(null || "default");      // Output: "default"
+
+// 4. Performance Considerations
+// Accessing undefined properties can result in slightly slower performance compared
+// to accessing existing properties because JavaScript engines must verify the property’s existence.
+// Explicit use of null can help make your code more predictable and easier for optimizations.
+
+// 5. Use Cases in Real-World Applications
+// 5.1 APIs and Data Models
+// APIs often use null to indicate missing or optional values:
+// {
+//   "id": 1,
+//   "name": null // The name field is intentionally left empty
+// }
+// undefined is generally not serialized into JSON, making null the preferred choice.
+
+
+// ------------------------------------------- The End Undefined -----------------------------------------------
+
 // null
 // Definition:
 // null is an intentional assignment that represents the absence of any object value.
