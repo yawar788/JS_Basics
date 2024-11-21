@@ -77,5 +77,26 @@ console.log(getNothing()); // Output: null
 // Default                       Behavior	Assigned by JavaScript to      Requires explicit assignment.
 //                               uninitialized variables, missing 
 //                               properties, or function calls 
-//                                 with no return.	
+//                               with no return.	
+// Usability	                    Used for system-level uninitialized 
+//                               values	                                Used for developer-assigned "no value"
+// Equality	                    undefined == null is true               undefined === null is false 
+//                               (loose equality)                        (strict equality)
+                              	                      
+// Common Use Cases
+// Use undefined When:
+// Default state of variables (e.g., when a variable hasn’t been assigned).
+// Uninitialized object properties or array elements.
+  
+// Use null When:
+// Explicitly clearing a value or resetting a variable.
+// Indicating absence of an object reference or result.
 
+// Advanced Considerations
+// Type Checking:
+// console.log(typeof undefined); // Output: "undefined"
+// console.log(typeof null);      // Output: "object" (historical quirk)
+
+// Avoid Misuse of undefined:
+// let x;
+// x = undefined; // Bad practice, better to use null for intentional emptiness
