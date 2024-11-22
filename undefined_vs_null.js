@@ -37,6 +37,18 @@ console.log(arr[1]); // Output: undefined (2nd element is empty)
 // let a;
 // console.log(a + 2); // Output: NaN (undefined coerces into NaN in arithmetic)
 
+// ------------------------------------------- The End Undefined -----------------------------------------------
+
+// null
+// Definition:
+// null is an intentional assignment that represents the absence of any object value.
+// It is used to signify "no value" or "empty object reference."
+
+// Key Characteristics:
+// Explicit Assignment: null is not assigned automatically; it must be set by the programmer.
+// Type: Its type is object (this is a historical quirk in JavaScript).
+// Intentional Absence: Indicates an intentional "empty" state or lack of an object.
+
 // 2.2 Common Patterns Using null
 // Lazy Initialization:
 // let databaseConnection = null; // Initialize when needed
@@ -69,19 +81,6 @@ console.log(arr[1]); // Output: undefined (2nd element is empty)
 //   "name": null // The name field is intentionally left empty
 // }
 // undefined is generally not serialized into JSON, making null the preferred choice.
-
-
-// ------------------------------------------- The End Undefined -----------------------------------------------
-
-// null
-// Definition:
-// null is an intentional assignment that represents the absence of any object value.
-// It is used to signify "no value" or "empty object reference."
-
-// Key Characteristics:
-// Explicit Assignment: null is not assigned automatically; it must be set by the programmer.
-// Type: Its type is object (this is a historical quirk in JavaScript).
-// Intentional Absence: Indicates an intentional "empty" state or lack of an object.
 
 // Example 1: Explicit Assignment
 let myVar = null;
