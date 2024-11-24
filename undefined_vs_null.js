@@ -2,7 +2,7 @@
 
 // undefined and null are two distinct data types in JavaScript, but they are often confused
 // because both represent "nothing" or "absence of a value." Here's an in-depth explanation:
-// It represents the absence of an initialized value.
+// undefined represents the absence of an initialized value.
 
 // Key Points:
 // Default Value: Variables that are declared but not initialized are automatically assigned 
@@ -37,7 +37,7 @@ console.log(arr[1]); // Output: undefined (2nd element is empty)
 // let a;
 // console.log(a + 2); // Output: NaN (undefined coerces into NaN in arithmetic)
 
-// ------------------------------------------- The End Undefined -----------------------------------------------
+// ------------------------------------------- The End -----------------------------------------------
 
 // null
 // Definition:
@@ -46,7 +46,7 @@ console.log(arr[1]); // Output: undefined (2nd element is empty)
 
 // Key Characteristics:
 // Explicit Assignment: null is not assigned automatically; it must be set by the programmer.
-// Type: Its type is object (this is a historical quirk in JavaScript).
+// Type: Its type is object (this is a historical quirk/bug in JavaScript).
 // Intentional Absence: Indicates an intentional "empty" state or lack of an object.
 
 // 2.2 Common Patterns Using null
@@ -111,15 +111,15 @@ console.log(getNothing()); // Output: null
 // Key Differences
 // Feature	                      undefined	                               null
 // Definition	                  Automatically assigned by JavaScript.	   Explicitly assigned by the programmer.
-// Type	                        undefined	                               object (quirk of JavaScript).
+// Type	                        undefined	                               object (quirk/bug of JavaScript).
 // Purpose	                      Represents an uninitialized variable     Represents an intentional absence of a value.
 //                               or missing value.	 
 // Default                       Behavior	Assigned by JavaScript to      Requires explicit assignment.
 //                               uninitialized variables, missing 
 //                               properties, or function calls 
 //                               with no return.	
-// Usability	                    Used for system-level uninitialized 
-//                               values	                                Used for developer-assigned "no value"
+// Usability	                    Used for system-level uninitialized    Used for developer-assigned "no value"
+//                               values	                                
 // Equality	                    undefined == null is true               undefined === null is false 
 //                               (loose equality)                        (strict equality)
                               	                      
