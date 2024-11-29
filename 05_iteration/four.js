@@ -1,5 +1,4 @@
 // for in loop
-
 const myobj={
     js:'javascript',
     cpp:'c++',
