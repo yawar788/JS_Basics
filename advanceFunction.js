@@ -35,3 +35,28 @@ console.log(double(5)); // Output: 10
 // Explanation:
 // multiplyBy returns a function, making it a higher-order function. This enables 
 // dynamic behavior customization.
+
+// 5. IIFE (Immediately Invoked Function Expressions)
+// An IIFE is a function that runs immediately after it is defined.
+
+// Example:
+(function () {
+    console.log('This is an IIFE!');
+})();
+
+// Explanation:
+// Useful for creating isolated scopes to prevent variable pollution.
+
+
+// 6. Recursion
+// Recursion is when a function calls itself.
+
+// Example:
+function factorial(n) {
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+}
+console.log(factorial(5)); // Output: 120
+
+// Explanation:
+// The function keeps calling itself with smaller values until a base condition is met.
