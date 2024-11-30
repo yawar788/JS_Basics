@@ -60,3 +60,21 @@ console.log(factorial(5)); // Output: 120
 
 // Explanation:
 // The function keeps calling itself with smaller values until a base condition is met.
+
+7. Arrow Functions and Lexical this
+Arrow functions don’t have their own this; they inherit this from their surrounding context.
+
+Example:
+const obj = {
+    name: 'Yawar',
+    greet: function () {
+        const inner = () => {
+            console.log(`Hello, ${this.name}`);
+        };
+        inner();
+    },
+};
+
+obj.greet(); // Output: Hello, Yawar
+Explanation:
+Arrow functions make managing this easier in callbacks and event handlers.
