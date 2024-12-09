@@ -36,6 +36,22 @@ console.log(double(5)); // Output: 10
 // multiplyBy returns a function, making it a higher-order function. This enables 
 // dynamic behavior customization.
 
+4. Function Composition
+Function composition combines two or more functions to create a new function.
+
+// Example:
+// const add = (x) => x + 2;
+// const multiply = (x) => x * 3;
+
+// const compose = (f, g) => (x) => f(g(x));
+
+// const addThenMultiply = compose(multiply, add);
+
+// console.log(addThenMultiply(2)); // Output: 12
+// Explanation:
+// Functions are composed by applying one function to the result of another.
+
+
 // 5. IIFE (Immediately Invoked Function Expressions)
 // An IIFE is a function that runs immediately after it is defined.
 
