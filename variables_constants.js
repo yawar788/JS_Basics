@@ -1,5 +1,4 @@
 // Variables and Constants in JavaScript: var, let, and const
-
 // Introduction
 // In JavaScript, variables are used to store data that can be referenced
 // and manipulated later. There are three ways to declare variables: var,
